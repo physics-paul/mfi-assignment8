@@ -24,18 +24,22 @@ This task sought to look at the CIK and filing date pair from the previous secti
 
 We can define the CAV as the normalized trading volume, calibrated to -71 to -11 days before the event date and taken on a log scale. For clarification, suppose the range of -71 to -11 days was not quite a volatile range of trading, while the cumulative three-day rolling window around the event date was very volatile, then the CAV would be a large number, scaled by a standard deviation or more from the mean of the past -71 to -11 day rolling window.
 
-The table below shows the descriptive statistics for the CAR and CAV rolling windows over the sample period.
+The table below shows the descriptive statistics for the CAR and CAV rolling windows over the sample period 1995:2018.
 
-```markdown
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-```
+| --- | CAR(1)  | CAR(3) | CAR(5) | CAV(1) | CAV(3) | CAV (5) |
+| Mean | -0.001508 |	-0.002782	| -0.003579 |	0.526526	| 1.206844	| 1.863234 | 
+|Standard Deviation	|0.061269 |	0.096360 |	0.124626 |	1.513595 |	3.473083 |	6.329492 |
+| Minimum |	-0.732448 |	-0.807893	| -0.934338 |	-8.344340	| -19.990874	| -27.465825 |
+|25%	|-0.018018 |	-0.029812	| -0.043501	| -0.423825	| -1.007499 | -2.104361 |
+|50%	|-0.000766 |	-0.001695	| -0.002122	| 0.387644	| 0.844627 |	1.365758 |
+|75%	|0.014817	| 0.024814 |	0.035890 |	1.236411	| 2.974241	| 5.078070 |
+| Maximum |	1.105913 | 1.936429	1.787982 |	12.774111 |	23.541118	42.558456|
 
 Additionally we can plot the distribution of both measures, given by:
+
+<p align="center">
+  <img width="450" height="450" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/PCA.png">
+</p>
 
 This Python script can be seen in the GitHub pages as 'eventStudies.py'. Be cautioned though, this code takes around ~1hr to run, because of the intensive process in calculating the CAV and CAR for each event study. 
 
