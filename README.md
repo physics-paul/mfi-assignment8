@@ -33,7 +33,7 @@ The table below shows the descriptive statistics for the CAR and CAV rolling win
 |25%	|-0.018018 |	-0.029812	| -0.043501	| -0.423825	| -1.007499 | -2.104361 |
 |50%	|-0.000766 |	-0.001695	| -0.002122	| 0.387644	| 0.844627 |	1.365758 |
 |75%	|0.014817	| 0.024814 |	0.035890 |	1.236411	| 2.974241	| 5.078070 |
-| Maximum |	1.105913 | 1.936429	1.787982 |	12.774111 |	23.541118	42.558456|
+| Maximum |	1.105913 | 1.936429 |	1.787982 |	12.774111 |	23.541118	| 42.558456|
 
 Additionally we can plot the distribution of both measures, given first by the cumulative abnormal return (CAR):
 
