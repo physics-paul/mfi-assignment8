@@ -35,11 +35,21 @@ The table below shows the descriptive statistics for the CAR and CAV rolling win
 |75%	|0.014817	| 0.024814 |	0.035890 |	1.236411	| 2.974241	| 5.078070 |
 | Maximum |	1.105913 | 1.936429	1.787982 |	12.774111 |	23.541118	42.558456|
 
-Additionally we can plot the distribution of both measures, given first by the cumulative average return:
+Additionally we can plot the distribution of both measures, given first by the cumulative abnormal return (CAR):
 
 <p align="center">
-  <img width="550" height="450" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part2car.png">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part2car.png">
 </p>
+
+Notice what this might be saying: from 1995-2018, the CAR trends slightly upward and is definitely non-zero, meaning the returns experienced over the event date are slightly different than what the CAPM model would suggest. However, considering the mean is roughly zero, this indicates the CAPM does a fairly good job at predicting returns.
+
+For the cumulative abnormal volume, the distribution is given by:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part2cav.png">
+</p>
+
+Notice here one interesting tidbit, is the CAV has a slight trend upwards, possibly indicating the volatility in the future is greater than the past would predict.
 
 This Python script can be seen in the GitHub pages as 'eventStudies.py'. Be cautioned though, this code takes around ~1hr to run, because of the intensive process in calculating the CAV and CAR for each event study. 
 
@@ -49,7 +59,33 @@ This code produces the final 'sentimentAnalysisAndEventStudies.csv' data file to
 
 The main task for this section was to compute the abnormal stock returns and abnormal trading volume around 8-K filings, and study how these measure vary depending on the number of positive and negative words included in the filing.
 
-In obtaining the positivity and negativity of the document, these results can be sorted into quintiles. If we calculate the descriptive statistics for the CAR and CAV in the highest vs. lowest percentile, we obtain the following table:
+In obtaining the positivity and negativity of the document, these results can be sorted into quintiles. If we calculate the descriptive statistics for the CAR and CAV in the highest vs. lowest percentile, we obtain the following charts:
+
+CAR(0) plotted with the upper and lower quintiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part3car0.png">
+</p>
+
+CAR(5) plotted with the upper and lower quintiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part3car5.png">
+</p>
+
+CAV(0) plotted with the upper and lower qunitiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part3cav0.png">
+</p>
+
+CAV(5) plotted with the upper and lower quintiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part3cav5.png">
+</p>
+
+These results are very interesting! It seems the sentiment of the 8-K from this rudimentary analysis doesn't capture the overall effect of CAR and CAV, because it is hard to see any trend. The upper and lower quintiles seems to follow the same general pattern, except for a few exceptions or so. The one noticeable difference is in the CAR(0) upper quintile around 2001. This may simply be due to some noise, but it is remarkably higher in this time period. Could this be some effect due to the 'dot com' bubble burst of 2000? It is not clear, as an analysis of the more robust sentiment analysis could give more insight.
 
 This Python script can be seen in the GitHub pages as 'sentimentAnalysis.py', and is combined with the section below.
 
