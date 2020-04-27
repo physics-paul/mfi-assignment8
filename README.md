@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/physics-paul/mfi-assignmen
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-$sum_i i^2$
+# $$ sum_i i^2 $$
 
 ### Markdown
 
