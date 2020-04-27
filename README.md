@@ -1,13 +1,6 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 ## ASSIGNMENT 8: Event Studies and Sentiment Analysis using Python
 
 This project seeks to analyze the sentiment of 8-Ks for each year-quarter from the SEC webite from 1995-2018. The goal is to see if any correlation exists between the sentiment, or tone, of the 8-K and the subsequent abnormal trading volume or abnormal returns around the actual event date. This task is divided into three parts: 1. Downloading the Data, 2. Event Studies, 3. Rudimentary Sentiment Analysis, and 4. Advanced Sentiment Analysis. 
-
-
-
-<script> $\sum{x=i}^{i}$ </script>
-
 
 ### 1. Downloading the Data
 
@@ -31,7 +24,7 @@ This task sought to look at the CIK and filing date pair from the previous secti
 
 $$\log \sum{1}$$
 
-We can define the CAV as the normalized trading volume, calibrated to -115 to -91 days before the event date and taken on a log scale. For clarification, suppose the range of -115 to -91 days was not quite a volatile range of trading, while the cumulative three-day rolling window around the event date was very volatile, then the CAV would be a large number, scaled by a standard deviation or more from the mean of the past -115 to -91 day rolling window.
+We can define the CAV as the normalized trading volume, calibrated to -71 to -11 days before the event date and taken on a log scale. For clarification, suppose the range of -71 to -11 days was not quite a volatile range of trading, while the cumulative three-day rolling window around the event date was very volatile, then the CAV would be a large number, scaled by a standard deviation or more from the mean of the past -71 to -11 day rolling window.
 
 The table below shows the descriptive statistics for the CAR and CAV rolling windows over the sample period.
 
