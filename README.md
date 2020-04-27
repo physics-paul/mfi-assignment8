@@ -38,7 +38,8 @@ The table below shows the descriptive statistics for the CAR and CAV rolling win
 Additionally we can plot the distribution of both measures, given by:
 
 <p align="center">
-  <img width="450" height="450" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/PCA.png">
+  <h1> Cumulative Average Return vs. time </h1> 
+  <img width="450" height="450" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part2car.png">
 </p>
 
 This Python script can be seen in the GitHub pages as 'eventStudies.py'. Be cautioned though, this code takes around ~1hr to run, because of the intensive process in calculating the CAV and CAR for each event study. 
