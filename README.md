@@ -22,11 +22,18 @@ The Python script can be seen in the GitHub pages as 'sentimentAnalysis.py'. It 
 
 This task sought to look at the CIK and filing date pair from the previous section to determine the cumulative abnormal return (CAR) and cumulative abnormal volume (CAV) for each CIK/filing date pair. The abnormal return (AR) is defined as the return in excess of the CAPM market return, regressed from -315 to -91 days from the event or filing date. The 'cumulative' part of the definition arises from summing the rolling window of abnormal returns around the event date. For instance, the three-day window consists of the day prior to the event date, the event date, and the day after the event date. The one-day, three-day, and five-day rolling window was calculated for both CAR and CAV.
 
-$$\log \sum{1}$$
-
 We can define the CAV as the normalized trading volume, calibrated to -71 to -11 days before the event date and taken on a log scale. For clarification, suppose the range of -71 to -11 days was not quite a volatile range of trading, while the cumulative three-day rolling window around the event date was very volatile, then the CAV would be a large number, scaled by a standard deviation or more from the mean of the past -71 to -11 day rolling window.
 
 The table below shows the descriptive statistics for the CAR and CAV rolling windows over the sample period.
+
+```markdown
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+```
 
 Additionally we can plot the distribution of both measures, given by:
 
