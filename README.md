@@ -101,8 +101,41 @@ The first thing to notice in this section is difficult in cleaning up an html fi
 4. Assign a tonality to each sentence by the ' ' function in the NLTK toolkit to analyze the tonality of each sentence.
 5. Sum up the overall tonality and divide by the total number of sentences to grab the offical 'tone' of the 8-K.
 
-After this, it was relatively easy to sort the 8-K documents into quintiles and generate the descriptive statistics for the upper and lower quintile. The result is:
+After this, it was relatively easy to sort the 8-K documents into quintiles and generate the descriptive statistics for the upper and lower quintile. Specifically, when calculating the mean, the result is:
 
+CAR(0) plotted with the upper and lower quintiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part4car0.png">
+</p>
+
+CAR(5) plotted with the upper and lower quintiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part4car5.png">
+</p>
+
+CAV(0) plotted with the upper and lower qunitiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part4cav0.png">
+</p>
+
+CAV(5) plotted with the upper and lower quintiles:
+
+<p align="center">
+  <img width="400" height="300" src="https://raw.githubusercontent.com/physics-paul/mfi-assignment8/master/part4cav5.png">
+</p>
+
+The results seem a little underwhelming. By and large it seems the sentiment of the 8-K plays little role in actually generating abnormal returns, except for a few years. However, it is hard to tell which years these will be, as some years the lower quintile has a larger abnormal return, and some years the upper quintile has the larger abnormal return.
+
+Some descriptive statistics are given in the following table for the five-day rolling window:
+
+| --- | CAR(5) Upper | CAR(5) Lower | CAV(5) Upper | CAV(5) Lower | 
+| Mean | 0.00460 |	-0.00407	| 1.6278 |	1.9775	| 
+|Standard Deviation	| 0.10961 |	0.12776 |	5.90024 | 6.9308 |
+
+This chart highlights what was seen in the plots above. There is a slight advantage to a more positive tone to the 8-K, by almost 1%. However, by looking at the time series data, it is hard to discern when this will happen. All which can be said is, on average, there is a slight advantage to a more positive tone in the 8-K. So talk positive!
 
 This Python script can be seen in the GitHub pages as 'sentimentAnalysis.py'. Be cautioned though, this code takes around ~1hr to run, due to the time-intensive process of analyzing each 8-K.
 
