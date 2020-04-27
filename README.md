@@ -16,7 +16,7 @@ There were a few main sources of data used for this project:
   
 In actually downloading the data, Python was used for the data extraction to grab the information from each URL, specifically using the 'requests' module. Since each of the 8-K's was in the form of an html script, the module 'Beautiful Soup' was used in order to parse through the html and only grab the body of the document.
 
-The Python script can be seen in the GitHub pages as 'download8K.py'.
+The Python script can be seen in the GitHub pages as 'sentimentAnalysis.py'. It was put here because the code runs more smoothly to go ahead an perform the Sentiment Analysis in the next sections while downloading the data.
 
 ### Event Studies
 
@@ -29,6 +29,8 @@ The table below shows the descriptive statistics for the CAR and CAV rolling win
 Additionally we can plot the distribution of both measures, given by:
 
 This Python script can be seen in the GitHub pages as 'eventStudies.py'. Be cautioned though, this code takes around ~1hr to run, because of the intensive process in calculating the CAV and CAR for each event study. 
+
+This code produces the final 'sentimentAnalysisAndEventStudies.csv' data file to obtain all information for each event study.
 
 ### Rudimentary Sentiment Analysis
 
@@ -54,3 +56,5 @@ After this, it was relatively easy to sort the 8-K documents into quintiles and 
 
 
 This Python script can be seen in the GitHub pages as 'sentimentAnalysis.py'. Be cautioned though, this code takes around ~1hr to run, due to the time-intensive process of analyzing each 8-K.
+
+This code produces the 'sentimentAnalysis.csv' data file, which is used by the 'eventStudies.py' script in order to obtain the final output.
