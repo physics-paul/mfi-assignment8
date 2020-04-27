@@ -1,5 +1,5 @@
 theme: jekyll-theme-midnight
 
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+title: Management of Financial Institutions Final Project
+
+description: Event Studies and Sentiment Analysis using Python
