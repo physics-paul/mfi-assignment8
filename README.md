@@ -4,7 +4,7 @@ This project seeks to analyze the sentiment of 8-Ks for each year-quarter from t
 
 ```markdown
 
-$$\sum{x=i}^{i}$$
+$\sum{x=i}^{i}$
 
 ```
 
