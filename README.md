@@ -69,3 +69,5 @@ After this, it was relatively easy to sort the 8-K documents into quintiles and 
 This Python script can be seen in the GitHub pages as 'sentimentAnalysis.py'. Be cautioned though, this code takes around ~1hr to run, due to the time-intensive process of analyzing each 8-K.
 
 This code produces the 'sentimentAnalysis.csv' data file, which is used by the 'eventStudies.py' script in order to obtain the final output.
+
+</script>
